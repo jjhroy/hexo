@@ -1,0 +1,10 @@
+<!-- <img src="css/test.jpg" alt="main-page-cover-image" class="img-fluid"> -->
+<!-- <hr class="hr-divide"> -->
+<div id="main-page">
+  <% page.posts.each(function(item) { %>
+    <%- partial('_partial/article-excerpt.ejs', {item: item}) %> 
+    <!-- <hr class="hr-divide"> -->
+  <% }); %>  
+  
+  <%- partial('_partial/pagination') %>
+</div>
